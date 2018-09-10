@@ -5,6 +5,7 @@ var app = express();
 //app config
 
 app.set("view engine", "ejs");
+app.use(express.static("public"));
 
 
 app.get("/", function(req,res)
@@ -23,11 +24,11 @@ app.get("/register" , function(req,res)
     res.render("register");
 });
 
-app.post("/viewpage", function(req,res)
+app.get("/viewpage", function(req,res)
 {
    // res.send("In viewpage");
    res.render("viewpage");
-})
+});
 
 app.listen(process.env.PORT,process.env.IP, function(req,res)
 {

@@ -1,2 +1,91 @@
-<h1>GoalSetter</h1>
+
+<% include partials/header %>
+
+<nav class = "navbar navbar-light bg-light fixed-top">
+    Goalsetter  <center>Welcome</center>
+    <a href = "/">LogOut</a>
+</nav>
+
+  <div class="row content">
+        <div class="col-3">
+            <div class="leftbar">
+                <div class ="strong">
+                        <strong>Start your Goals</strong>
+                </div>
+                <div>
+                    <!-- Button trigger modal -->
+                         <button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal">
+                    New Category
+                  </button>
+                </div>
+            </div>
+        </div> 
+        
+         <div class="col-9">
+            <div class="container">
+                <div>
+            
+                </div>
+             </div> 
+        </div> 
+        </div>
+  </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Create New Category</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+         <form>
+      <div class="modal-body">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Enter New Category</label>
+            <input type="text" class="form-control" id="newCategory" aria-describedby="newCategory" placeholder="Enter New Category">
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Add Category</button>
+      </div>
+        </form>    
+    </div>
+  </div>
+</div>
+
+<% include partials/footer %>
+
+<!--// <nav class="container">-->
+<!--//   <div>Home</div>-->
+<!--//   <div>Search</div>-->
+<!--//   <div>Logout</div>-->
+<!--// </nav>-->
+
+<!--<nav class="navbar navbar-light" style="background-color: #e3f2fd;">-->
+  <!-- Navbar content -->
+<!--  <nav class = "navbar navbar-expand-lg fixed-top">-->
+      
+<!--</nav>-->
+<!--<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">-->
+
+
+
+
+<!--<div class = "wrap" >-->
+    <!--<div class="floatleft"></div>-->
+    <!--<div class="floatright"></div>-->
+    <!--<div style="clear: both;"></div>-->
+<!--</div>-->
+
+<!--<h1>GoalSetter</h1>-->
+
+<!--<div class = "left">-->
+<!--    <i class="fa fa-plus-square" style="font-size:20px"></i>-->
+<!--</div>-->
+
 
